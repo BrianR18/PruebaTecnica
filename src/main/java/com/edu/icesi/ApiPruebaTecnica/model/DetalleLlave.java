@@ -9,6 +9,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import java.util.*;
 
 @Embeddable
 @Builder
@@ -17,6 +18,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DetalleLlave implements Serializable{
-    private int numDetail;
-    private int numFactura;
+    private UUID numDetail;
+    private UUID numFactura;
 }

@@ -4,7 +4,8 @@ import java.util.UUID;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.edu.icesi.ApiPruebaTecnica.model.Cliente;
+import com.edu.icesi.ApiPruebaTecnica.model.Producto;
 
-public interface ClienteRepository extends CrudRepository<Cliente, UUID>{
+public interface ProductoRepository extends CrudRepository<Producto, UUID>{
+    
 }

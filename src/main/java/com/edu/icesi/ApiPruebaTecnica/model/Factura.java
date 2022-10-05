@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 public class Factura {
     @Id
     @Column(name = "num_factura")
-    private UUID numBill;
+    private UUID numFactura;
 
     @Column(name = "id_cliente")
     private UUID id_cliente;

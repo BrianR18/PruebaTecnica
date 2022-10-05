@@ -10,13 +10,13 @@ import com.edu.icesi.ApiPruebaTecnica.dto.ClienteDTO;
 import com.edu.icesi.ApiPruebaTecnica.dto.FacturaDTO;
 import com.edu.icesi.ApiPruebaTecnica.dto.ProductoDTO;
 
-import java.util.List;
+import java.util.*;
 
 @RequestMapping("/factura")
 public interface PruebaTecnicaAPI {
 
     @GetMapping("/detalle/{id_detalle}/{id_factura}")
-    DetalleDTO getDetalle(@PathVariable(name = "id_detalle") int idDetalle, @PathVariable(name="id_factura") int idFactura);
+    DetalleDTO getDetalle(@PathVariable(name = "id_detalle") UUID detalleId, @PathVariable(name="id_factura") UUID FacturaId);
 
     @PostMapping("/cliente")
     ClienteDTO createCliente(@RequestBody ClienteDTO clienteDTO);
