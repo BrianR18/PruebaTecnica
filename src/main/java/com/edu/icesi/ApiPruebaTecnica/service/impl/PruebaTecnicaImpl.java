@@ -31,12 +31,12 @@ public class PruebaTecnicaImpl implements PruebaTecnicaService{
 
     @Override
     public Detalle getDetalle(UUID detalleId, UUID FacturaId) {
-        Detalle det = detalleRepository.findById(new DetalleLlave(detalleId, FacturaId)).orElse(null);
-        if(det != null) {
-            if(det.getAmount() >= 5 && det.getPrice() >= 1000000)
-                det.setPrice(det.getPrice() * 0.9);
+        Detalle detalle = detalleRepository.findById(new DetalleLlave(detalleId, FacturaId)).orElse(null);
+        if(detalle != null) {
+            if(detalle.getAmount() >= 5 && detalle.getPrice() >= 1000000)
+            detalle.setPrice(detalle.getPrice() * 0.9);
         }
-        return det;
+        return detalle;
     }
 
     @Override
