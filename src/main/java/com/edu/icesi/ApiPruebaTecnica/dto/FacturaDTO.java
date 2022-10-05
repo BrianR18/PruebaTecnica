@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class FacturaDTO {
     
-    private UUID numBill;
+    private UUID numFactura;
 
     private UUID id_cliente;
     

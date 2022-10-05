@@ -1,9 +1,5 @@
 package com.edu.icesi.ApiPruebaTecnica.service.impl;
 
-import com.edu.icesi.ApiPruebaTecnica.dto.ClienteDTO;
-import com.edu.icesi.ApiPruebaTecnica.dto.DetalleDTO;
-import com.edu.icesi.ApiPruebaTecnica.dto.FacturaDTO;
-import com.edu.icesi.ApiPruebaTecnica.dto.ProductoDTO;
 import com.edu.icesi.ApiPruebaTecnica.model.Cliente;
 import com.edu.icesi.ApiPruebaTecnica.model.Detalle;
 import com.edu.icesi.ApiPruebaTecnica.model.Factura;

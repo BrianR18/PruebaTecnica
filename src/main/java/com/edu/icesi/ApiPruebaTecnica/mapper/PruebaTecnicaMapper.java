@@ -15,9 +15,9 @@ public interface PruebaTecnicaMapper {
     Cliente fromClienteDTO(ClienteDTO clienteDTO);
     ClienteDTO fromCliente(Cliente cliente);
     Detalle fromDetalleDTO(DetalleDTO detalleDTO);
-    DetalleDTO fromCliente(Detalle detalle);
+    DetalleDTO fromDetalle(Detalle detalle);
     Factura fromFacturaDTO(FacturaDTO facturaDTO);
-    FacturaDTO fromCliente(Factura factura);
+    FacturaDTO fromFactura(Factura factura);
     Producto fromProductoDTO(ProductoDTO productoDTO);
-    ProductoDTO fromCliente(Producto producto);
+    ProductoDTO fromProducto(Producto producto);
 }//End PruebaTecnicaMapper
